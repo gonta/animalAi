@@ -48,7 +48,7 @@ def model_train(X, y):
     # 評価手法
     model.compile(loss='categorical_crossentropy', optimizer=opt, metrics=['accuracy']) #どれ位正答したか
 
-    model.fit(X, y, batch_size=32, nb_epochs=100) # トレーニングを何回？50回
+    model.fit(X, y, batch_size=32, epochs=100) # トレーニングを何回？50回
 
     # modelの保存
     model.save=('./animal_cnn.h5')
